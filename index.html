@@ -10,19 +10,19 @@
       <form>
         <h1>Idealgewichtrechner</h1>
         <label for="size">Körpergröße</label>
-        <input type="number" id="size" class="input_field" />
+        <input type="number" id="size" class="input_field" min="100" required />
 
         <label for="age">Alter</label>
-        <input type="number" id="age" class="input_field" />
+        <input type="number" id="age" class="input_field" required />
 
-        <label for="">Körperbau</label>
+        <label>Körperbau</label>
         <div class="radio_container">
-          <label><input type="radio" name="radioBtn" value="big" />Breit</label>
-          <label><input type="radio" name="radioBtn" value="small" />Schmal</label>
+          <label><input type="radio" name="radioBtn" value="big" id="userBig" />Breit</label>
+          <label><input type="radio" name="radioBtn" value="small" id="userSmall" />Schmal</label>
 
-          <button type="button" id="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
 
-          <div id="result">Dein Idealgewicht ist:</div>
+          <div id="result">:</div>
         </div>
       </form>
     </main>
