@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-TS Idealgewichtrechner</title>
   </head>
-  <main>
-    <form>
-      <h1>Idealgewichtrechner</h1>
-      <label for="size">Körpergröße</label>
-      <input type="number" id="size" />
-
-      <label for="age">Alter</label>
-      <input type="number" id="age" />
-
-      <label for="">Körperbau</label>
-      <div>
-        <label><input type="radio" name="radioBtn" value="big" />Breit</label>
-        <label><input type="radio" name="radioBtn" value="small" />Schmal</label>
-
-        <button type="button" id="submit">Submit</button>
-
-        <div id="result">Dein Idealgewicht ist</div>
-      </div>
-    </form>
-  </main>
   <body>
+    <main>
+      <form>
+        <h1>Idealgewichtrechner</h1>
+        <label for="size">Körpergröße</label>
+        <input type="number" id="size" class="input_field" />
+
+        <label for="age">Alter</label>
+        <input type="number" id="age" class="input_field" />
+
+        <label for="">Körperbau</label>
+        <div class="radio_container">
+          <label><input type="radio" name="radioBtn" value="big" />Breit</label>
+          <label><input type="radio" name="radioBtn" value="small" />Schmal</label>
+
+          <button type="button" id="submit">Submit</button>
+
+          <div id="result">Dein Idealgewicht ist:</div>
+        </div>
+      </form>
+    </main>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
